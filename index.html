@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Interactive Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #e6f2ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #222;
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 650px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-weight: 700;
+      color: #1a3c6e;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    img {
+      width:150px;
+      height:100px;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    a.button-link {
+      display: inline-block;
+      margin: 15px 0;
+      background-color:#1a73e8;;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    button {
+      margin-left: 250px;
+      padding: 12px 22px;
+      font-size: 1rem;
+      background-color:#1a3c6e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0c5dd9;
+    }
+  </style>
+</head>
+<body>
+    <h1>Welcome to My Web Page</h1>
+
+    <p>This page is a demonstration of HTML, CSS styling, and JavaScript interactivity.</p>
+    <p>This webpage uses several important HTML tags including:</p>
+<ul>
+    <li><b>&lt;h1&gt;</b> is used for the main heading of the page.</li>
+    <li><b>&lt;p&gt;</b> defines paragraphs of text like this one.</li>
+    <li><b>&lt;img&gt;</b>  is used to display an image on the page.</li>
+    <li><b>&lt;a&gt;</b> creates a hyperlink that lets users visit another website.</li>
+    <li><b>&lt;button&gt;</b> is used to create a clickable button.</li>
+</ul>
+  <h5>Sample Image</h5>
+    <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Wallpapers-pexels-photo.jpg" 
+    alt="Sample Visual" />
+   <br>
+    <a href="https://www.google.com/"
+     class="button-link" target="_blank" >Go to Google</a>
+ <br>
+    <button id="alertBtn">Click Me!</button>
+
+  <script>
+    document.getElementById('alertBtn').addEventListener('click', function() {
+      alert('Hello! You clicked the button.');
+    });
+  </script>
+
+</body>
+</html>
